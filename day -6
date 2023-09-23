@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int T, N;
+    scanf("%d", &T);
+
+    while (T--) {
+        scanf("%d", &N);
+        int carsRequired = 0;
+
+        while (N > 0) {
+            if (N >= 4) {
+                carsRequired++;
+                N -= 4;
+            } else {
+                carsRequired++;
+                break;
+            }
+        }
+
+        printf("%d\n", carsRequired);
+    }
+
+    return 0;
+}
