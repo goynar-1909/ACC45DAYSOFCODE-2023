@@ -1,0 +1,18 @@
+int main(void) {
+	int T;
+	scanf("%d", &T);
+	
+	while(T--)
+	{
+	    int X,Y;
+	    scanf("%d %d", &X, &Y);
+	    if(X > (10*Y)) {
+	        printf("\nYES");
+	    }
+	    else {
+	        printf("\nNO");
+	    }
+	}
+	
+	return 0;
+}
