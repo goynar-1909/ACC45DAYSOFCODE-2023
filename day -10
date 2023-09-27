@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+	int T;
+	scanf("%d", &T);
+	
+	while (T--) {
+	    int X,Y, chocolates;
+	    scanf("%d %d", &X, &Y);
+	    
+	    chocolates=X/Y;
+	    printf("%d\n", chocolates);
+	}
+	return 0;
+}
