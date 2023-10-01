@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int X, Y;
+    // Input values for X and Y
+    printf("Enter the stair number X: ");
+    scanf("%d", &X);
+    printf("Enter the number of steps per move Y: ");
+    scanf("%d", &Y);
+
+    int A = X / Y;  // Calculate the number of Y-step increments
+    int B = X - (A * Y);  // Calculate the remaining steps using 1-step increments
+
+    int total_moves = A + B;  // Calculate the total minimum moves
+
+    printf("Minimum number of moves to reach stair %d is %d\n", X, total_moves);
+
+    return 0;
+}
