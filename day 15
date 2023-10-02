@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int N, X;
+    printf("Enter the total number of cards (N): ");
+    scanf("%d", &N);
+    printf("Enter the number of face-up cards (X): ");
+    scanf("%d", &X);
+
+    // Calculate the minimum number of operations
+    int min_operations = (X < N - X) ? X : (N - X);
+
+    printf("Minimum number of operations required: %d\n", min_operations);
+
+    return 0;
+}
