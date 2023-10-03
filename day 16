@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int N, M; // Number of candies and number of friends
+        scanf("%d %d", &N, &M);
+
+        // Check if it's possible to distribute candies as per the conditions
+        if (N % M == 0 && N >= 2 * M) {
+            printf("Yes\n");
+        } else {
+            printf("No\n");
+        }
+    }
+
+    return 0;
+}
