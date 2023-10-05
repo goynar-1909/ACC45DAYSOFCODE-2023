@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int A, B;
+    printf("Enter Alice's score : ");
+    scanf("%d", &A);
+
+    printf("Enter Bob's score : ");
+    scanf("%d", &B);
+    if(A>=B){
+        printf("%d points will be further scored in the match before it ends",7-A);
+    }else{
+        printf("%d points will be further scored in the match before it ends",7-B);
+    }
+    return 0;
+}
