@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int X, Y, a, b;
+    printf("Enter the current volume of TV : ");
+    scanf("%d", &X);
+
+    printf("Enter the changed volume : ");
+    scanf("%d", &Y);
+    a = X - Y;
+    b = Y - X;
+    if(X>=Y){
+        printf("Press volume down button %d times",a);
+    }else{
+        printf("Press volume up button %d times",b);
+    }
+    return 0;
+}
