@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() {
+// Initialize variables
+double balance; // Current account balance in rupees
+double deposit; // Monthly deposit amount in rupees
+double charges; // Monthly bank charges in rupees
+int months; // Number of months
+
+// Input the initial balance, monthly deposit, monthly charges, and number of months
+printf("Enter the current account balance (in rupees): ");
+scanf("%lf", &balance);
+printf("Enter the monthly deposit amount (in rupees): ");
+scanf("%lf", &deposit);
+printf("Enter the monthly bank charges (in rupees): ");
+scanf("%lf", &charges);
+printf("Enter the number of months: ");
+scanf("%d", &months);
+
+// Calculate the final balance after Z months
+for (int i = 0; i < months; i++) {
+balance = balance + deposit - charges;
+}
+
+// Display the final balance
+printf("Final account balance after %d months: %.2lf rupees\n", months
+, balance);
+
+return 0;
+}
