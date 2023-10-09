@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int PA, PB, QA, QB;
+
+    // Input the time instants for participant P
+    printf("Enter time instant for problem A for participant P: ");
+    scanf("%d", &PA);
+    printf("Enter time instant for problem B for participant P: ");
+    scanf("%d", &PB);
+
+    // Input the time instants for participant Q
+    printf("Enter time instant for problem A for participant Q: ");
+    scanf("%d", &QA);
+    printf("Enter time instant for problem B for participant Q: ");
+    scanf("%d", &QB);
+
+    // Calculate the time penalties
+    int time_penalty_P = (PA < PB) ? PA : PB;
+    int time_penalty_Q = (QA < QB) ? QA : QB;
+
+    // Determine the better rank or tie
+    if (time_penalty_P < time_penalty_Q) {
+        printf("Participant P got the better rank.\n");
+    } else if (time_penalty_Q < time_penalty_P) {
+        printf("Participant Q got the better rank.\n");
+    } else {
+        printf("It's a TIE!\n");
+    }
+
+    return 0;
+}
