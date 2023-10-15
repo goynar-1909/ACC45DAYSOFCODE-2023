@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int totalQuestions = 100;
+    int correctMarks = 3;
+    int incorrectMarks = -1;
+    int totalMarks;
+    int targetMarks;
+
+    printf("Enter the target marks received by Chef (0 <= X <= 100): ");
+    scanf("%d", &targetMarks);
+
+    // Calculate the minimum number of problems Chef marked incorrect
+    for (int incorrectCount = 0; incorrectCount <= totalQuestions; incorrectCount++) {
+        totalMarks = (totalQuestions - incorrectCount) * correctMarks + incorrectCount * incorrectMarks;
+
+        if (totalMarks == targetMarks) {
+            printf("Minimum number of problems Chef marked incorrect: %d\n", incorrectCount);
+            break;
+        }
+    }
+
+    return 0;
+}
