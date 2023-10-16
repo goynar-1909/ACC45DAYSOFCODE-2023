@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int A, B, C, X;
+    printf("Enter the rupees Alice, Bob and Charlie have : ");
+    scanf("%d %d %d", &A, &B, &C);
+
+    printf("Enter the cost of netflix subscription : ");
+    scanf("%d", &X);
+    if(A+B>=X){
+        printf("YES,Alice and Bob can contribute");
+    }else if(A+C>=X){
+        printf("YES,Alice and Charlie can contribute");
+    }else if(B+C>=X){
+        printf("YES,Bob and Charlie can contribute");
+    }else{
+        printf("NO,they cannot contribute");
+    }
+    return 0;
+}
