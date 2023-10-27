@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int X;
+    printf("Enter the amount to be paid : ");
+    scanf("%d", &X);
+    if(X % 5 != 0){
+        printf("-1\n");
+    }else{
+        if(X % 10 == 0){
+            printf("The minimum number of coins chef needs = %d\n", X / 10);
+        }else{
+            printf("The minimum number of coins chef needs = %d\n", (X / 10)  + (X % 10) / 5);
+        }
+    }
+    return 0;
+}
