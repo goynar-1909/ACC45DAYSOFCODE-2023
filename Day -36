@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int n,b;
+    printf("Enter the number of spooky days : ");
+    scanf("%d", &n);
+    b = n / 7;
+    if(n <= 1){
+        printf("Dracula would have his favourite meal 0 time");
+    }else if(n<=7){
+        printf("Dracula would have his favourite meal 1 time");
+    }else if(n>7){
+        if(n%7!=0){
+            printf("Dracula would have his favourite meal %d times",b+1);
+        }else{
+            printf("Dracula would have his favourite meal %d times",b);
+        }
+    }
+    return 0;
+}
