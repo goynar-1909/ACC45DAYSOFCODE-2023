@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int p,q,t;
+    printf("Enter the score of ALice and Bob : ");
+    scanf("%d %d", &p, &q);
+    t = p + q;
+    if(t%2==0){
+        printf("It is ALice's serve");
+    }else{
+        printf("It is Bob's serve");
+    }
+    return 0;
+}
