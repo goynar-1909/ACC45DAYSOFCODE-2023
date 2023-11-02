@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int x,y,d,t;
+    printf("Enter the skills of both the teams : ");
+    scanf("%d %d", &x, &y);
+
+    printf("Enter the maximum allowed skill : ");
+    scanf("%d", &d);
+    t = x - y;
+    if(t<=d){
+        printf("YES");
+    }else{
+        printf("NO");
+    }
+    return 0;
+}
